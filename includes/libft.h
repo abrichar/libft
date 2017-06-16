@@ -6,7 +6,7 @@
 /*   By: abrichar <abrichar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/23 04:27:15 by abrichar          #+#    #+#             */
-/*   Updated: 2017/03/27 14:53:50 by abrichar         ###   ########.fr       */
+/*   Updated: 2017/06/16 18:18:53 by abrichar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,9 @@
 # include <unistd.h>
 # include <sys/types.h>
 # include <sys/stat.h>
+# include <sys/uio.h>
 # include <fcntl.h>
+# define BUFF_SIZE 10
 
 typedef struct		s_list
 {
@@ -95,4 +97,5 @@ void				ft_foreach(int *tab, int length, void (*f)(int));
 int					ft_count_if(char **tab, int (*f)(char*));
 void				ft_display_file(char *name);
 char				*ft_except(char *str, char c);
+int					get_next_line(const int fd, char **line);
 #endif
