@@ -6,7 +6,7 @@
 /*   By: abrichar <abrichar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/23 04:27:15 by abrichar          #+#    #+#             */
-/*   Updated: 2017/06/16 18:18:53 by abrichar         ###   ########.fr       */
+/*   Updated: 2017/10/09 17:56:38 by abrichar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,4 +98,6 @@ int					ft_count_if(char **tab, int (*f)(char*));
 void				ft_display_file(char *name);
 char				*ft_except(char *str, char c);
 int					get_next_line(const int fd, char **line);
+int					match(char *s1, char *s2);
+int					nmatch(char *s1, char *s2);
 #endif
