@@ -6,7 +6,7 @@
 /*   By: abrichar <abrichar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/23 04:27:15 by abrichar          #+#    #+#             */
-/*   Updated: 2017/10/09 17:56:38 by abrichar         ###   ########.fr       */
+/*   Updated: 2017/10/10 11:29:01 by abrichar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,4 +100,9 @@ char				*ft_except(char *str, char c);
 int					get_next_line(const int fd, char **line);
 int					match(char *s1, char *s2);
 int					nmatch(char *s1, char *s2);
+void				ft_putnstr(char *str, int nbr);
+short				ft_countnbr(long nbr);
+short				ft_countunbr(unsigned long nbr);
+void				ft_putzerox(char letter);
+char				*ft_itoabaseu(unsigned long nbr, int base, char min);
 #endif

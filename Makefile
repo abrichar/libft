@@ -6,7 +6,7 @@
 #    By: abrichar <abrichar@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 14:47:20 by abrichar          #+#    #+#              #
-#    Updated: 2017/10/02 15:36:56 by eliajin          ###   ########.fr        #
+#    Updated: 2017/10/10 12:31:44 by abrichar         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -26,7 +26,8 @@ ft_putchar.c ft_putstr.c ft_putendl.c ft_putnbr.c ft_putchar_fd.c \
 ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_strcmp.c ft_strncmp.c \
 ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstmap.c \
 ft_count_if.c ft_display_file.c ft_foreach.c ft_range.c ft_sort_params.c \
-ft_swap.c ft_isspace.c ft_strexcept.c get_next_line.c
+ft_swap.c ft_isspace.c ft_strexcept.c get_next_line.c match.c nmatch.c \
+ft_itoabaseu.c ft_putnstr.c ft_putzerox.c ft_countnbr.c ft_countunbr.c
 OBJ_NAME = $(SRC_NAME:.c=.o)
 OBJ_PATH = obj
 SRC_PATH = src
