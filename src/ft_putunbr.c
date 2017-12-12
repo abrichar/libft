@@ -1,34 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_putunbr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abrichar <abrichar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/13 18:31:15 by abrichar          #+#    #+#             */
-/*   Updated: 2017/10/11 17:07:28 by abrichar         ###   ########.fr       */
+/*   Created: 2017/10/11 18:08:37 by abrichar          #+#    #+#             */
+/*   Updated: 2017/10/11 18:10:37 by abrichar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(const char *str)
+void	ft_putunbr(unsigned long n)
 {
-	int		sign;
-	char	*cur;
-	int		result;
-
-	result = 0;
-	cur = (char *)str;
-	while (ft_isspace(*cur))
-		cur++;
-	sign = (*cur == '-') ? -1 : 1;
-	cur = (*cur == '+' || *cur == '-') ? cur + 1 : cur;
-	while (*cur >= '0' && *cur <= '9')
+	if (n > 9)
 	{
-		result = result * 10 + *cur - 48;
-		cur++;
+		ft_putunbr(n / 10);
+		ft_putunbr(n % 10);
 	}
-	result *= sign;
-	return (result);
+	else
+		ft_putchar((char)(n + 48));
 }

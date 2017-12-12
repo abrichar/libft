@@ -1,34 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_putnbrwp.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abrichar <abrichar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/13 18:31:15 by abrichar          #+#    #+#             */
-/*   Updated: 2017/10/11 17:07:28 by abrichar         ###   ########.fr       */
+/*   Created: 2017/10/11 17:51:52 by abrichar          #+#    #+#             */
+/*   Updated: 2017/10/11 18:04:57 by abrichar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(const char *str)
+void	ft_putnbrwp(long nbr, int precision)
 {
-	int		sign;
-	char	*cur;
-	int		result;
+	short count;
 
-	result = 0;
-	cur = (char *)str;
-	while (ft_isspace(*cur))
-		cur++;
-	sign = (*cur == '-') ? -1 : 1;
-	cur = (*cur == '+' || *cur == '-') ? cur + 1 : cur;
-	while (*cur >= '0' && *cur <= '9')
+	if (precision > 0)
 	{
-		result = result * 10 + *cur - 48;
-		cur++;
+		if (nbr < 0)
+		{
+			ft_putchar('-');
+			nbr = -nbr;
+		}
+		count = ft_countnbr(nbr);
+		count = precision - count;
+		while (count-- > 0)
+			ft_putchar('0');
 	}
-	result *= sign;
-	return (result);
+	if (nbr || precision)
+		ft_putnbr(nbr);
 }

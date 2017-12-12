@@ -6,7 +6,7 @@
 /*   By: abrichar <abrichar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/23 04:27:15 by abrichar          #+#    #+#             */
-/*   Updated: 2017/10/10 11:29:01 by abrichar         ###   ########.fr       */
+/*   Updated: 2017/12/12 22:21:43 by eliajin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,18 @@ typedef struct		s_list
 	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
+typedef struct		s_printf
+{
+	char			flag_sharp;
+	char			flag_zero;
+	char			flag_minus;
+	char			flag_plus;
+	char			flag_space;
+	int				width;
+	int				precision;
+	char			*length;
+	char			conversion;
+}					t_printf;
 
 int					ft_atoi(const char *str);
 void				ft_bzero(void *s, size_t n);
@@ -105,4 +117,41 @@ short				ft_countnbr(long nbr);
 short				ft_countunbr(unsigned long nbr);
 void				ft_putzerox(char letter);
 char				*ft_itoabaseu(unsigned long nbr, int base, char min);
+void				ft_putnbrwp(long nbr, int precision);
+void				ft_putstrwp(char *str, int precision);
+void				ft_putunbrwp(unsigned long nbr, int precision);
+void				ft_putunbr(unsigned long n);
+/*
+**begin printf
+*/
+int					ft_printf(const char *restrict format, ...);
+int					treat(t_printf *elem, va_list ap);
+int					ft_c(int c, t_printf *elem);
+int					ft_s(char *str, t_printf *elem);
+int					ft_smaj(wchar_t *str, t_printf *elem);
+int					ft_d(int nbr, t_printf *elem);
+int					ft_l(long nbr, t_printf *elem);
+int					ft_x(unsigned long nbr, char letter, t_printf *elem);
+int					ft_o(unsigned long nbr, t_printf *elem);
+int					ft_p(void *address, t_printf *elem);
+int					check_conv(char **str, char *cha, t_printf *elem);
+int					ft_percent(t_printf *elem);
+int					is_null(t_printf *elem);
+int					ft_cwl(wint_t c, t_printf *elem);
+int					ft_count_unicode(wchar_t c);
+int					ft_count_multiple_unicode(wchar_t *str);
+int					ft_oux(unsigned long nbr, char letter, t_printf *elem);
+int					ft_invalid_input(char c, t_printf *elem);
+int					end_o(char *str, int count, t_printf *elem);
+char				*check_flags(char **str, t_printf *elem);
+char				*check_width(char **str, t_printf *elem);
+char				*check_precision(char **str, t_printf *elem);
+char				*check_len(char **s, t_printf *elem);
+void				ft_putnbrwp(long nbr, int precision);
+void				ft_putunbrwp(unsigned long nbr, int precision);
+void				ft_putstrwp(char *str, int precision);
+void				two_bytes(wchar_t c);
+void				three_bytes(wchar_t c);
+void				four_bytes(wchar_t c);
+void				ft_unicode(unsigned int c);
 #endif
