@@ -6,11 +6,11 @@
 /*   By: ardurand <ardurand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/30 23:52:21 by ardurand          #+#    #+#             */
-/*   Updated: 2017/10/06 22:50:50 by eliajin          ###   ########.fr       */
+/*   Updated: 2017/12/13 15:01:17 by eliajin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 int		end_o(char *str, int count, t_printf *elem)
 {

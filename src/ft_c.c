@@ -6,11 +6,11 @@
 /*   By: ardurand <ardurand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/26 17:05:36 by ardurand          #+#    #+#             */
-/*   Updated: 2017/10/11 17:08:11 by abrichar         ###   ########.fr       */
+/*   Updated: 2017/12/13 14:59:57 by eliajin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 int		ft_count_unicode(wchar_t c)
 {

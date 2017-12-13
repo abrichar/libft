@@ -6,11 +6,11 @@
 /*   By: ardurand <ardurand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/02 01:44:28 by ardurand          #+#    #+#             */
-/*   Updated: 2017/10/06 22:51:00 by eliajin          ###   ########.fr       */
+/*   Updated: 2017/12/13 15:01:05 by eliajin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 void	ft_puto(char *str, t_printf *elem)
 {

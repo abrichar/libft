@@ -6,11 +6,11 @@
 /*   By: ardurand <ardurand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/30 15:26:01 by ardurand          #+#    #+#             */
-/*   Updated: 2017/10/06 22:51:09 by eliajin          ###   ########.fr       */
+/*   Updated: 2017/12/13 15:00:51 by eliajin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 char	check_plus_spacel(long nbr, t_printf *elem)
 {

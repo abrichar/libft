@@ -6,11 +6,11 @@
 /*   By: ardurand <ardurand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/03 17:00:24 by ardurand          #+#    #+#             */
-/*   Updated: 2017/10/06 22:50:42 by eliajin          ###   ########.fr       */
+/*   Updated: 2017/12/13 15:01:28 by eliajin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 void	ft_putp(char *str, t_printf *elem)
 {

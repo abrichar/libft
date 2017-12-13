@@ -6,11 +6,11 @@
 /*   By: ardurand <ardurand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 20:08:23 by ardurand          #+#    #+#             */
-/*   Updated: 2017/10/06 22:49:32 by eliajin          ###   ########.fr       */
+/*   Updated: 2017/12/13 15:02:26 by eliajin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 int		is_normal(char *str, t_printf *elem)
 {

@@ -6,11 +6,11 @@
 /*   By: ardurand <ardurand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/25 22:51:33 by ardurand          #+#    #+#             */
-/*   Updated: 2017/10/06 22:49:48 by eliajin          ###   ########.fr       */
+/*   Updated: 2017/12/13 15:02:14 by eliajin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 char	*check_flags(char **str, t_printf *elem)
 {
