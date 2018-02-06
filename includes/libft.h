@@ -6,7 +6,7 @@
 /*   By: abrichar <abrichar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/23 04:27:15 by abrichar          #+#    #+#             */
-/*   Updated: 2018/02/06 00:02:57 by eliajin          ###   ########.fr       */
+/*   Updated: 2018/02/06 15:07:10 by abrichar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -156,4 +156,8 @@ void				two_bytes(wchar_t c);
 void				three_bytes(wchar_t c);
 void				four_bytes(wchar_t c);
 void				ft_unicode(unsigned int c);
+/*
+**ajout_lemin
+*/
+void				ft_lstaddlast(t_list **alst, t_list *new);
 #endif
