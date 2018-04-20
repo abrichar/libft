@@ -6,7 +6,7 @@
 /*   By: abrichar <abrichar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/27 16:53:47 by abrichar          #+#    #+#             */
-/*   Updated: 2017/06/16 18:19:34 by abrichar         ###   ########.fr       */
+/*   Updated: 2018/04/20 18:32:20 by abrichar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ int				get_next_line(int const fd, char **line)
 	int				ret;
 
 	tmp = ft_strnew(BUFF_SIZE);
-	if (BUFF_SIZE <= 0 || fd < 0 || (ret = read(fd, tmp, 0)) < 0)
+	if (BUFF_SIZE <= 0 || fd < 0 || (ret = read(fd, tmp, 0)) < 0 || fd == 1)
 		return (-1);
 	while ((ret = read(fd, tmp, BUFF_SIZE)) > 0)
 	{
